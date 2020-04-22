@@ -15,6 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image with latest stable Nvidia base image together with .NET Core and OpenCvSharp 
-      run: 
-        - docker build . --file ./BuildImageNvidiaCuda/Dockerfile --tag dockeratso/nvidia-dotnet-core-sdk-opencvsharp:latest
-        - docker push dockeratso/nvidia-dotnet-core-sdk-opencvsharp:latest
+      run: |
+        docker build . --file ./BuildImageNvidiaCuda/Dockerfile --tag dockeratso/nvidia-dotnet-core-sdk-opencvsharp:latest
+        docker push dockeratso/nvidia-dotnet-core-sdk-opencvsharp:latest
