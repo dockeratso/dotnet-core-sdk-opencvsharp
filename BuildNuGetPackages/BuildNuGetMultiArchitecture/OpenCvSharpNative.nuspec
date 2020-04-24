@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>OpenCvSharp4.runtime.multi-arch</id>
-    <version>4.3.0.20200424</version>
-    <title>Native binding for OpenCvSharp on Debian x64, Ubuntu x64, Raspian Stretch, Windows 10 x86 and Windows 10 x64</title>
+    <version>4.3.0.20200425</version>
+    <title>Native binding for OpenCvSharp on Ubuntu x64, Raspian Stretch, Windows 10 x86 and Windows 10 x64</title>
     <authors>dockeratso</authors>
     <owners>dockeratso</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -21,7 +21,6 @@
   </metadata>
   <files>
     <file src=".\native\linux-arm\native\*" target="runtimes\linux-arm\native" />
-    <file src=".\native\linux-x64\native\*" target="runtimes\linux-x64\native" />
     <file src=".\native\ubuntu-x64\native\*" target="runtimes\ubuntu-x64\native" />
     <file src=".\native\win-x86\native\*" target="runtimes\win-x86\native" />
     <file src=".\native\win-x86\native\*" target="runtimes\win10-x86\native" />
