@@ -1,4 +1,4 @@
-FROM debian:latest AS build-native-env
+FROM debian:buster AS build-native-env
 
 ENV OPENCV_VERSION=4.3.0
 
