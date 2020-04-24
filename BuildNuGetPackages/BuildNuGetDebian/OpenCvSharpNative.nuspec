@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>OpenCvSharp4.runtime.debian.10-amd64</id>
-    <version>4.3.0.20200405</version>
+    <version>4.3.0.20200424</version>
     <title>Native binding for OpenCvSharp on Debian Buster 10 amd64.</title>
     <authors>dockeratso</authors>
     <owners>dockeratso</owners>
@@ -10,7 +10,7 @@
     <license type="expression">BSD-3-Clause</license>
     <licenseUrl>https://licenses.nuget.org/BSD-3-Clause</licenseUrl>
     <projectUrl>https://github.com/dockeratso/dotnet-core-sdk-opencvsharp</projectUrl>
-    <description>Native dependency package for OpenCvSharp to work on Debian Buster. Projects built with OpenCvSharp can be executed inside docker containers deduced from image dockeratso/debian-dotnet-core-sdk-opencvsharp:latest
+    <description>Native dependency package for OpenCvSharp to work on Debian Buster. Projects built with OpenCvSharp can be executed inside docker containers deduced from image dockeratso/debian-dotnet-core-sdk-opencvsharp:4.3.0.20200424
     </description>
     <summary>Native dependency package for OpenCvSharp to work on Debian Buster</summary>
     <releaseNotes></releaseNotes>
