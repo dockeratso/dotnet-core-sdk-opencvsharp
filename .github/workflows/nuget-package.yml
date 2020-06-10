@@ -17,4 +17,4 @@ jobs:
     - name: NuGet Pack
       run: | 
         cd BuildNuGetPackages/BuildNuGetRaspbian/
-        // nuget pack
+        # nuget pack
