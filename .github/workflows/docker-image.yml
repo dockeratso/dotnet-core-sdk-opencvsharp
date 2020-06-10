@@ -17,6 +17,6 @@ jobs:
     - name: Login to DockerHub Registry
       run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
     - name: Build the Docker image
-      run: docker build . --file BuildImageUbuntu/Dockerfile --tag ubuntu-dotnet-core-sdk-opencvsharp:$(date +%s)
+      run: docker build . --file BuildImageUbuntu/Dockerfile --tag dockeratso/ubuntu-dotnet-core-sdk-opencvsharp:$(date +%s)
     - name: Push the Docker image
-      run: docker push ubuntu-dotnet-core-sdk-opencvsharp:$(date +%s)
+      run: docker push dockeratso/ubuntu-dotnet-core-sdk-opencvsharp:$(date +%s)
