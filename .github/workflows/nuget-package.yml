@@ -20,9 +20,9 @@ jobs:
         dotnet pack --output packages
         cd packages
         ls
-    - name: NuGet Pack Ubuntu
+    - name: NuGet Pack MultiArchitecture
       run: | 
-        cd BuildNuGetPackages/BuildImageUbuntu/
+        cd BuildNuGetPackages/BuildNuGetMultiArchitecture/
         dotnet pack --output packages
         cd packages
         ls
