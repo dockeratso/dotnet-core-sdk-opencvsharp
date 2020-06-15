@@ -29,7 +29,7 @@ jobs:
   
     - name: NuGet Pack Debian
       run: | 
-        cd BuildNuGetPackages/BuildImageDebian/
+        cd BuildNuGetPackages/BuildNuGetDebian/
         dotnet pack --output packages
         cd packages
         ls
