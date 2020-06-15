@@ -1,0 +1,18 @@
+name: Test NuGet packages and Docker images
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: docker://dockeratso/raspbian-dotnet-core-sdk-opencvsharp:4.3.0.20200424
+    - name: Test samples
+      run: | 
+        cd Samples
+        dotnet build
