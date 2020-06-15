@@ -16,8 +16,8 @@
     <releaseNotes></releaseNotes>
     <tags>OpenCV Image OpenCvSharp Multi-Architecture</tags>
     <dependencies>
-      <dependency id="OpenCvSharp4.runtime.win" version="4.3.0.20200421" />
-      <dependency id="OpenCvSharp4.runtime.ubuntu.18.04-x64" version="4.3.0.20200421" />
+      <dependency id="OpenCvSharp4.runtime.win" version="4.3.0.20200524" />
+      <dependency id="OpenCvSharp4.runtime.ubuntu.18.04-x64" version="4.3.0.20200527" />
       <dependency id="OpenCvSharp4.runtime.raspbian.stretch" version="4.3.0.20200424" />
     </dependencies>
   </metadata>

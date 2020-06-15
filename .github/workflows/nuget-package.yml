@@ -14,7 +14,23 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: NuGet Pack
+    - name: NuGet Pack Raspbian
       run: | 
         cd BuildNuGetPackages/BuildNuGetRaspbian/
-        # nuget pack
+        dotnet pack --output packages
+        cd packages
+        ls
+    - name: NuGet Pack Ubuntu
+      run: | 
+        cd BuildNuGetPackages/BuildImageUbuntu/
+        dotnet pack --output packages
+        cd packages
+        ls
+  
+    - name: NuGet Pack Debian
+      run: | 
+        cd BuildNuGetPackages/BuildImageDebian/
+        dotnet pack --output packages
+        cd packages
+        ls
+    
