@@ -11,8 +11,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: docker://dockeratso/raspbian-dotnet-core-sdk-opencvsharp:4.3.0.20200424
+    - uses: docker://dockeratso/ubuntu-dotnet-core-sdk-opencvsharp:4.3.0.20200527
     - name: Test samples
       run: | 
         cd Samples
         dotnet build
+        dotnet test
