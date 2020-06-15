@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">BSD-3-Clause</license>
     <licenseUrl>https://licenses.nuget.org/BSD-3-Clause</licenseUrl>
-    <projectUrl>https://github.com/dockeratso/dotnet-core-sdk-opencvsharp</projectUrl>
+    <projectUrl>https://github.com/scienta-scientific/docker.peak-dotnet-opencv-deps</projectUrl>
     <description>Native dependency package for OpenCvSharp to work on Raspian stretch. Projects built with OpenCvSharp can be executed inside docker containers deduced from image dockeratso/raspbian-dotnet-core-sdk-opencvsharp:*
     </description>
     <summary>Native dependency package for OpenCvSharp to work on Raspian stretch</summary>
