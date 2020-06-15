@@ -10,8 +10,8 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    container: dockeratso/ubuntu-dotnet-core-sdk-opencvsharp:4.3.0.20200527
     steps:
-    - uses: docker://dockeratso/ubuntu-dotnet-core-sdk-opencvsharp:4.3.0.20200527
     - name: Test samples
       run: | 
         cd Samples
