@@ -82,7 +82,7 @@ RUN cd opencv && mkdir build && cd build && \
 WORKDIR /
 
 # OPENCVSHARP version
-ENV OPENCVSHARP_VERSION=4.3.0.20200405
+ENV OPENCVSHARP_VERSION=4.3.0.20200527
 
 # Download OpenCvSharp
 RUN git clone https://github.com/shimat/opencvsharp.git
