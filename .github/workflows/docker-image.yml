@@ -33,17 +33,5 @@ jobs:
     - name: Push the Docker image
       run: docker push dockeratso/nvidia-dotnet-core-sdk-opencvsharp:${{steps.vars.outputs.tag}}
 
-  build_arm:
-    runs-on: self-hosted-arm
-    steps:
-    - uses: actions/checkout@v2
-    - name: Login to DockerHub Registry
-      run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
-    - name: Get the version
-      id: vars
-      run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
-    - name: Build the Docker image
-      run: docker build . --file BuildImageRaspbian/Dockerfile --tag dockeratso/raspbian-dotnet-core-sdk-opencvsharp:${{steps.vars.outputs.tag}}
-    - name: Push the Docker image
-      run: docker push dockeratso/raspbian-dotnet-core-sdk-opencvsharp:${{steps.vars.outputs.tag}}
+
     
