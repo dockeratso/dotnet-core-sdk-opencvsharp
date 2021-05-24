@@ -1,5 +1,10 @@
 FROM nvidia/cuda:10.0-base
 
+# Add missing certificate
+RUN wget -O /usr/local/share/ca-certificates/missing_certificate.crt https://censys.io/certificates/129fb5de501e24041cd14a81075fd1cde257408d4a353e636912e38bdda2d3fb/pem/raw
+
+RUN update-ca-certificates
+
 RUN apt-get update
 
 # opencv deps
@@ -14,7 +19,7 @@ RUN apt-get install -y libtesseract-dev -y libopenexr-dev
 
 RUN apt-get install -y nano wget unzip curl
 
-# dotnet core 3.1 sdk
+# dotnet core 5.0 sdk
 
 RUN apt-get install -y software-properties-common
 
@@ -28,7 +33,6 @@ RUN apt-get install -y apt-transport-https
 
 RUN apt-get update
 
-RUN apt-get install -y dotnet-sdk-3.1
 RUN apt-get install -y dotnet-sdk-5.0
 
 # turbojpeg deps
