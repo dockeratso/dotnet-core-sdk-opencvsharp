@@ -15,7 +15,7 @@ jobs:
       id: vars
       run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
     - name: Build the Docker image
-      run: docker build . --file BuildImageUbuntu/Dockerfile --tag dockeratso/ubuntu-dotnet-core-sdk-opencvsharp:${{steps.vars.outputs.tag}}
+      run: docker build . --file BuildImageUbuntu/Dockerfile --tag dockeratso/ubuntu-dotnet-core-sdk-opencvsharp:${{steps.vars.outputs.tag}} --tag dockeratso/ubuntu-dotnet-core-sdk-opencvsharp:latest
     - name: Push the Docker image with tag
       run: docker push dockeratso/ubuntu-dotnet-core-sdk-opencvsharp:${{steps.vars.outputs.tag}}
     - name: Push the Docker image as latest
@@ -31,7 +31,7 @@ jobs:
       id: vars
       run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
     - name: Build the Docker image
-      run: docker build . --file BuildImageNvidiaCuda/Dockerfile --tag dockeratso/nvidia-dotnet-core-sdk-opencvsharp:${{steps.vars.outputs.tag}}
+      run: docker build . --file BuildImageNvidiaCuda/Dockerfile --tag dockeratso/nvidia-dotnet-core-sdk-opencvsharp:${{steps.vars.outputs.tag}} --tag dockeratso/nvidia-dotnet-core-sdk-opencvsharp:latest
     - name: Push the Docker image with tag
       run: docker push dockeratso/nvidia-dotnet-core-sdk-opencvsharp:${{steps.vars.outputs.tag}}
     - name: Push the Docker image as latest
