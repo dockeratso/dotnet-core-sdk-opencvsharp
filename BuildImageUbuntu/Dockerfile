@@ -28,7 +28,6 @@ RUN apt-get install -y apt-transport-https
 
 RUN apt-get update
 
-RUN apt-get install -y dotnet-sdk-3.1
 RUN apt-get install -y dotnet-sdk-5.0
 
 # turbojpeg deps
