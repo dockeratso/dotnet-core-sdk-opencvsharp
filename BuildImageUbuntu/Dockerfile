@@ -1,10 +1,5 @@
 FROM ubuntu:18.04
 
-# Add missing certificate
-RUN wget -O /usr/local/share/ca-certificates/missing_certificate.crt https://censys.io/certificates/129fb5de501e24041cd14a81075fd1cde257408d4a353e636912e38bdda2d3fb/pem/raw
-
-RUN update-ca-certificates
-
 RUN apt-get update
 
 # opencv deps
@@ -18,6 +13,11 @@ RUN apt-get install -y libtesseract-dev -y libopenexr-dev
 # nice to have
 
 RUN apt-get install -y nano wget unzip curl
+
+# Add missing certificate
+RUN wget -O /usr/local/share/ca-certificates/missing_certificate.crt https://censys.io/certificates/129fb5de501e24041cd14a81075fd1cde257408d4a353e636912e38bdda2d3fb/pem/raw
+
+RUN update-ca-certificates
 
 # dotnet core 5.0 sdk
 
